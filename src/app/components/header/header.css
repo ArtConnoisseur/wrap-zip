@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.main {
+    gap: 25%;
+}
+
+hr {
+    max-width: 70%;
+    border-top: solid black 0px;
+}
+
+.icon {
+    margin: 0px 20px;
+}
