@@ -1,0 +1,32 @@
+#homepage-header {
+    background-color: var(--gray-bg);
+    margin: 0px;
+}
+
+#homepage-call-to-act {
+    display: flex;
+    padding: 2% 15% 5% 15%;
+}
+
+#homepage-head-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#homepage-large-font {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+}
+
+#homepage-roboto-heading {
+    font-family: "Roboto";
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+#homepage-image-content {
+    display: flex;
+}

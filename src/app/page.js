@@ -1,8 +1,12 @@
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import Image from 'next/image';
+import { MainImage } from './components/main-image/main-image';
+import "./homepage.css";
+import heroImage from '../../public/sample-images/img/19.png';
+
 
 export default function Home() {
+  
   return (
     <>
     <div id="homepage-header">
@@ -13,14 +17,14 @@ export default function Home() {
             WrapZip Clothing Line
           </h3>
           <p id="homepage-large-font">
-            You can explore our high quality and<br/> fashionable clothing line!
+            You can explore our high quality and<br/>fashionable clothing line!
           </p>
           <button>
             Shop Now
           </button>
         </div>
         <div id="homepage-image-content">
-
+          <MainImage src={ heroImage }/>
         </div>
       </div>
       <Footer />
