@@ -1,0 +1,286 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  transition:all .3s;
+  user-select:none;
+}
+
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  font-family: 'Open Sans', sans-serif;
+  background:#29303E;
+}
+
+
+.wrapzip-login{
+  width:1300px;
+  height:600px;
+  display:flex;
+
+}
+
+.wrapzip-login form{
+  background:#fff;
+  width:50%;
+  padding:25px 50px;
+}
+
+.wrapzip-login .poster{
+  width:50%;
+  background:url('https://thumbs.dreamstime.com/b/happy-moment-indian-women-woman-looking-blue-pink-saree-41925390.jpg');
+  background-size:cover;
+  background-position:47%;
+}
+
+
+.wrapzip-login form img{
+  width:80px;
+}
+
+.wrapzip-login form .heading{
+  font-size:1.4em;
+  margin-top:15px;
+}
+
+.wrapzip-login form p{
+  font-size:.95em;
+  color:#444;
+  margin-bottom:40px;
+}
+
+.wrapzip-login form label{
+  display:block;
+  margin-top:20px;
+  color:#444;
+}
+
+.wrapzip-login form input{
+  border:none;
+  outline:none;
+  border-bottom:1px solid #000;
+  width:100%;
+  padding:10px 0px;
+}
+
+.wrapzip-login form .forgot{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:20px;
+  color:#444;
+  font-size:.85em;
+}
+
+.wrapzip-login form .forgot label{
+  margin-top:0;
+  font-size:1em;
+}
+
+.wrapzip-login form .forgot input{
+  width:auto;
+}
+
+
+.wrapzip-login form .forgot a{
+  color:#1E2832;
+  cursor:pointer;
+}
+
+
+.wrapzip-login form button{
+  border:none;
+  outline:none;
+  margin-top:40px;
+  padding:12px 0px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.wrapzip-login form .login{
+  width:60%;
+  background:#fff;
+  color:#1E2832;
+  box-shadow:0 0 10px #ccc;
+}
+
+.wrapzip-login form .login:hover{
+  color:#fff;
+  background:#1E2832;
+  box-shadow:0 0 10px #ccc;
+}
+
+.wrapzip-login form .signup{
+  width:38.5%;
+  background:#fff;
+  color:#1E2832;
+  box-shadow:0 0 10px #ccc;
+}
+
+.wrapzip-login form .signup:hover{
+  background:#1E2832;
+  color:#fff;
+}
+
+
+
+
+
+
+.wrapzip-signup{
+  width:1300px;
+  height:700px;
+  display:flex;
+}
+
+.wrapzip-signup form{
+  background:#fff;
+  width:50%;
+  padding:25px 50px;
+}
+
+.wrapzip-signup .poster{
+  width:50%;
+  background:url('https://thumbs.dreamstime.com/b/happy-moment-indian-women-woman-looking-blue-pink-saree-41925390.jpg');
+  background-size:cover;
+  background-position:47%;
+}
+
+
+.wrapzip-signup form img{
+  width:80px;
+}
+
+.wrapzip-signup form .heading{
+  font-size:1.4em;
+  margin-top:15px;
+}
+
+.wrapzip-signup form p{
+  font-size:.95em;
+  color:#1E2832;
+  margin-bottom:40px;
+}
+
+.wrapzip-signup form label{
+  display:block;
+  margin-top:20px;
+  color:#1E2832;
+}
+
+.wrapzip-signup form input{
+  border:none;
+  outline:none;
+  border-bottom:1px solid #000;
+  width:100%;
+  padding:10px 0px;
+}
+
+
+
+.wrapzip-signup form .forgot{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:20px;
+  color:#444;
+  font-size:.85em;
+}
+
+.wrapzip-signup form .forgot label{
+  margin-top:0;
+  font-size:1em;
+}
+
+.wrapzip-signup form .forgot input{
+  width:auto;
+}
+
+
+.wrapzip-signup form .forgot a{
+  color:#1E2832;
+  cursor:pointer;
+}
+
+
+.wrapzip-signup form button{
+  border:none;
+  outline:none;
+  margin-top:40px;
+  padding:12px 0px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.wrapzip-signup form .login{
+  width:60%;
+  background:#fff;
+  color:#1E2832;
+  box-shadow:0 0 10px #ccc;
+}
+
+.wrapzip-signup form .login:hover{
+  color:#fff;
+  background:#1E2832;
+  box-shadow:0 0 10px #ccc;
+}
+
+.wrapzip-signup form .signup{
+  width:38.5%;
+  background:#fff;
+  color:#1E2832;
+  box-shadow:0 0 10px #ccc;
+}
+
+.wrapzip-signup form .signup:hover{
+  background:#1E2832;
+  color:#fff;
+}
+
+
+@media (min-width: 0px) and (max-width: 800px){
+  
+  
+  .wrapzip-login{
+  display:block;
+  width:350px;
+  height:auto;
+  }
+  
+  .wrapzip-login form{
+    width:100%;
+    padding:40px 40px;
+  }
+  
+  .wrapzip-login .poster{
+    display:none;
+  }
+  
+  .wrapzip-login form .signup{
+  width:38%;
+  }
+  
+  .wrapzip-signup{
+    display:block;
+    width:350px;
+    height:auto;
+    }
+    
+    .wrapzip-signup form{
+      width:100%;
+      padding:40px 40px;
+    }
+    
+    .wrapzip-signup .poster{
+      display:none;
+    }
+    
+    .wrapzip-signup form .signup{
+    width:38%;
+    }
+  
+}
