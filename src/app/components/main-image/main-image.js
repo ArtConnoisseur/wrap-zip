@@ -4,10 +4,14 @@ import Image from "next/image";
 export const MainImage = ({ src }) => {
     return (
         <div>
-            <Image
-            alt="A sample Image"
-            src={ src }>
-            </Image>
+            <div id="main-img-border"></div>
+            <div id="main-img-container">
+                <Image
+                alt="A sample Image"
+                src={ src }
+                fill={true}>
+                </Image>
+            </div>
         </div>
     )
 };

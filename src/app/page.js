@@ -1,8 +1,12 @@
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
 import { MainImage } from './components/main-image/main-image';
+import { SiteImage } from './components/site-image/site-image';
+
 import "./homepage.css";
+
 import heroImage from '../../public/sample-images/img/19.png';
+import imageOne from '../../public/sample-images/img/image-category-1.png';
 
 
 export default function Home() {
@@ -27,8 +31,11 @@ export default function Home() {
           <MainImage src={ heroImage }/>
         </div>
       </div>
-      <Footer />
     </div>
+
+    <SiteImage src={imageOne} ratio="two-two"/>
+      
+    <Footer />
     </>
   );
 }

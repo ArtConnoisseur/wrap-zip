@@ -1,0 +1,16 @@
+#site-image-container {
+    position: relative;
+    border: black;
+}
+
+.one-one {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+}
+
+.two-two {
+    height: 30rem;
+    width: 30rem;
+    object-fit: cover;
+}

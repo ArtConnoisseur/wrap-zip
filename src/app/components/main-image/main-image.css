@@ -1,0 +1,21 @@
+#main-img-container {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 150px 0px 150px 0px;
+    overflow: hidden;
+}
+
+#main-img-border {
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 150px 0px 150px 0px;
+    overflow: hidden;
+    border: 1px solid black;
+    transform: translate(20px, 20px);
+}
