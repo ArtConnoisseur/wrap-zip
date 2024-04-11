@@ -1,8 +1,11 @@
-hr.short-line {
+.short-line {
     max-width: 40%;
     border-top: solid black 0px;
 }
-
+#product{
+    flex-direction: column;
+    gap:100%;
+}
 #about-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -14,9 +17,53 @@ hr.short-line {
 
 #product {
     background-color: var(--gray-bg);
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 #product-review {
     background-color: var(--dark-gray-bg);
     color: white;
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 100%;
+    display:flex;
+}
+
+#taxes-prices{
+  background-color: rgb(25, 10, 163);
+    display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+  width: 600px;
+    overflow:auto;
+
+}
+.roboto{
+    width: 600px;
+}
+ul{
+    width: 600px;
+    overflow:auto;
+
+}
+li{
+    white-space:wrap;
+}
+#review-text {
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    background-color: transparent;
+    padding-bottom: 5px;
+    color: white;
+}
+#product-ratings-parent{
+    width: 50%;
+}
+#customer-review{
+    width:50%;
+}
+#reviews{
+    width:50%;
+    overflow: auto;
 }

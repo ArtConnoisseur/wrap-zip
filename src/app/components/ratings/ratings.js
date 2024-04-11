@@ -52,11 +52,11 @@ function RatingBars( {five = 0, four = 0, three = 0, two = 0, one = 0} ) {
     } else {
         return (
             <div className='rating-bars'>
-                <Bar percent={five} />
-                <Bar percent={four} />
-                <Bar percent={three} />
-                <Bar percent={two} />
-                <Bar percent={one} />
+                <div className='rating-bar1'>5 Star Ratings:<Bar percent={five} /></div>
+                <div className='rating-bar1'>4 Star Ratings:<Bar percent={four} /></div>
+                <div className='rating-bar1'>3 Star Ratings:<Bar percent={three} /></div>
+                <div className='rating-bar1'>2 Star Ratings:<Bar percent={two} /></div>
+                <div className='rating-bar1'>1 Star Ratings:<Bar percent={one} /></div>
             </div>
         )
     }
@@ -65,9 +65,14 @@ function RatingBars( {five = 0, four = 0, three = 0, two = 0, one = 0} ) {
 export function Ratings({ rating }) {
     return (
         <div className='ratings'>
+            <div className='Stars-
+            Ratings'>
             Rating:
             <Stars rating={`${rating}`} />
+            </div>
             <div>
+                <br></br>
+                <br></br>
                 <RatingBars five={90} four={10}/>
             </div>
         </div>
