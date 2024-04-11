@@ -59,7 +59,7 @@
 
     --gray-bg: #F2F3F5;
     --dark-gray-bg: #1E2832;
-    --accnt: #FF6F61;
+    --accent: #FF6F61;
 
     color: var(--dark-gray-bg);
 }
@@ -102,7 +102,7 @@ a:hover {
     text-decoration: underline;
 }
 
-button {
+.big-button {
     background-color: var(--dark-gray-bg);
     border-radius: 0px;
     color: white;
@@ -112,11 +112,25 @@ button {
     border: none;
 }
 
-button:hover {
-    background-color: var(--accnt);
+.small-button {
+    background-color: var(--dark-gray-bg);
+    border-radius: 0px;
+    color: white;
+    min-width: 6%;
+    padding: 0.5rem 1.1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.big-button:hover, .small-button:hover {
+    background-color: var(--accent);
 }
 
 .white {
     color: white;
+}
+
+.roboto {
+    font-family: 'roboto';
 }
 

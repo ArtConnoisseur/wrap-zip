@@ -29,7 +29,7 @@ export const Header = () => {
                     </a>
                 </div>
             </div>
-            <hr></hr>
+            <hr className='long-line'></hr>
             <div className="header">
                 <a className="header-category-links" >Jewlery & Accessories</a>
                 <a className="header-category-links" >Clothing & Shoes</a>

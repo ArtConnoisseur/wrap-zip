@@ -1,3 +1,9 @@
+#homepage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 #homepage-header {
     background-color: var(--gray-bg);
     margin: 0px;
@@ -5,6 +11,7 @@
 
 #homepage-call-to-act {
     display: flex;
+    justify-content: center;
     padding: 2% 15% 5% 15%;
 }
 
@@ -30,3 +37,32 @@
 #homepage-image-content {
     display: flex;
 }
+
+#homepage-explore-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 10% 5% 10%;
+}
+
+#homepage-explore-text {
+    font-size: 1.5rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#homepage-explore-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    width: 70%;
+}
+
+#homepage-explore-images-small {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+

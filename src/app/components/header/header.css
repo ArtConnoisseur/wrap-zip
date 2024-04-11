@@ -9,8 +9,8 @@
     gap: 20%;
 }
 
-hr {
-    max-width: 70%;
+hr.long-line {
+    max-width: 80%;
     border-top: solid black 0px;
 }
 

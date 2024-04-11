@@ -1,0 +1,22 @@
+hr.short-line {
+    max-width: 40%;
+    border-top: solid black 0px;
+}
+
+#about-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#product {
+    background-color: var(--gray-bg);
+}
+
+#product-review {
+    background-color: var(--dark-gray-bg);
+    color: white;
+}

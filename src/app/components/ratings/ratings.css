@@ -1,0 +1,30 @@
+.star-container {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    aspect-ratio: 1;
+    height: 1.4rem;
+}
+
+.star-container .star-rate {
+    background-color: white;
+    height: 100%;
+}
+
+.stars {
+    display: flex;
+}
+
+.bar-contianer {
+    height: 1.5rem;
+    width: 17rem;
+    border: 1px solid white;
+}
+
+.bar {
+    background-color: white;
+    height: 100%;
+}
+
+.bar-parent-contianer {
+    display: flex;
+    gap: 1%;
+}
