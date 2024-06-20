@@ -18,9 +18,9 @@ function Hot({ hot }) {
 }
 
 
-export function SiteImage({ src, ratio, sale, hot, link}) {
+export function SiteImage({ src, ratio, sale, hot, link, className }) {
     return (
-        <div id="site-image-container" className={ ratio }>
+        <div className={`site-image-container ${className}`}>
             <Sale sale={ sale } />
             <Hot hot={ hot } />
             <Image src={ src } alt="" className={ ratio || "one-one" }/>

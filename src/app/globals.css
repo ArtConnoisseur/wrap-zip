@@ -55,7 +55,6 @@
 :root {
     font-family: "Roboto Light";
     font-size: 16px;
-    box-sizing: border-box;
 
     --gray-bg: #F2F3F5;
     --dark-gray-bg: #1E2832;
@@ -67,10 +66,11 @@
 body {
   font-weight: 400;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display Italic';
+  font-family: 'Roboto';
   font-weight: 600;
 }
 
@@ -100,11 +100,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: var(--accent);
+    transition: 0.2s;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .big-button {
     background-color: var(--dark-gray-bg);
-    border-radius: 0px;
     color: white;
     min-width: 6%;
     padding: 1.1rem;
@@ -114,7 +125,6 @@ a:hover {
 
 .small-button {
     background-color: var(--dark-gray-bg);
-    border-radius: 0px;
     color: white;
     min-width: 6%;
     padding: 0.5rem 1.1rem;
@@ -130,7 +140,7 @@ a:hover {
     color: white;
 }
 
-.roboto {
-    font-family: 'roboto';
+.playfair {
+    font-family: 'Playfair Display Italic';
 }
 

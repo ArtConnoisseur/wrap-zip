@@ -34,6 +34,7 @@
     margin-bottom: 0px;
 }
 
+
 #homepage-image-content {
     display: flex;
 }
@@ -43,7 +44,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 2% 10% 5% 10%;
 }
 
 #homepage-explore-text {
@@ -54,15 +54,16 @@
 
 #homepage-explore-images {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin: 0px;
-    width: 70%;
 }
 
 #homepage-explore-images-small {
     display: flex;
     flex-wrap: wrap;
-    max-width: 50%;
+    justify-content: flex-start;
 }
 
+.image-one {
+    display: none;
+}

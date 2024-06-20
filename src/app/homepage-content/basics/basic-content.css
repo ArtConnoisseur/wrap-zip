@@ -1,0 +1,49 @@
+.homepage-basic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.basic-content-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.basic-content-options {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.categories {
+    display: flex;
+    gap: 2%;
+    width: 80%;
+    margin-right: auto;
+}
+
+.basic-content-infocards {
+    width: 25%;
+}
+
+.basic-category {
+    font-size: 1.1rem;
+}
+
+.basic-category.selected {
+    font-family: 'Roboto Bold';
+    position: relative;
+}
+
+.basic-category.selected::after {
+    content: '';
+    width: 3ch;
+    height: 7px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: -0.5rem;
+    left: calc(50% - 1.5ch);
+    border-radius: 10px 10px 0 0;
+}

@@ -1,11 +1,16 @@
-.short-line {
-    max-width: 40%;
-    border-top: solid black 0px;
-}
-#product{
+#product-info {
+    display: flex;
     flex-direction: column;
-    gap:100%;
+    align-items: flex-start;
+    width: 50%;
 }
+
+#product-info hr {
+    border: 0.5px solid black;
+    width: 70%; 
+    margin-left: 0;
+}
+
 #about-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -15,55 +20,79 @@
     text-transform: capitalize;
 }
 
-#product {
-    background-color: var(--gray-bg);
-    padding-top: 100px;
-    padding-left: 100px;
-}
-
 #product-review {
+    display: flex;
     background-color: var(--dark-gray-bg);
     color: white;
-    padding-left: 100px;
-    padding-top: 50px;
-    width: 100%;
-    display:flex;
+    justify-content: center;
+    padding: 10% 0;
 }
 
-#taxes-prices{
-  background-color: rgb(25, 10, 163);
+#taxes-price {
     display: flex;
-  column-gap: 5px;
-  justify-content: space-between;
-  width: 600px;
-    overflow:auto;
+}
 
-}
-.roboto{
-    width: 600px;
-}
-ul{
+#product-info ul{
     width: 600px;
     overflow:auto;
 
 }
-li{
+
+#product-info li{
     white-space:wrap;
 }
+
 #review-text {
     border-bottom: 2px solid white;
     font-size: 16px;
     background-color: transparent;
     padding-bottom: 5px;
     color: white;
+    width: 80%;
 }
+
 #product-ratings-parent{
-    width: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-#customer-review{
-    width:50%;
+
+#customer-reviews{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
-#reviews{
-    width:50%;
-    overflow: auto;
+
+
+#product {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    background-color: var(--gray-bg);
+    margin-top: 5%;
+    padding: 10%; 
+}
+
+.review-button {
+    background-color: var(--gray-bg);
+    color: var(--dark-gray-bg);
+    margin-top: 3%;
+}
+
+.review-button:hover {
+    color: var(--gray-bg)
+}
+
+#product-image {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+}
+
+.product-icon {
+    position: relative;
+    left: 13.5%;
+    cursor: pointer;
 }

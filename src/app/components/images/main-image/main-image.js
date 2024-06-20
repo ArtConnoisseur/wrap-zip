@@ -9,7 +9,8 @@ export const MainImage = ({ src }) => {
                 <Image
                 alt="A sample Image"
                 src={ src }
-                fill={true}>
+                fill={true}
+                style={{objectFit: "cover"}}>
                 </Image>
             </div>
         </div>

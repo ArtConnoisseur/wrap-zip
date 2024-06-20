@@ -1,0 +1,60 @@
+.explore-grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.explore-grid-center {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    gap: 20px;
+    position: relative;
+    left: -4%;
+}
+
+.explore-grid {
+    aspect-ratio: 1;
+    width: 50%;
+    display: grid;
+    grid-template-areas: 
+        "f f s t"
+        "f f o i";
+    grid-template-columns: repeat(4, 50%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 4%;
+    justify-items: center;
+    align-items: center;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.first-image {
+    grid-area: f;
+}
+
+.second-image {
+    grid-area: s;
+}
+
+.third-image {
+    grid-area: t;
+}
+
+.fourth-image {
+    grid-area: o;
+}
+
+.fifth-image {
+    grid-area: i;
+}
+
+.vertical-explore-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 2rem;
+}

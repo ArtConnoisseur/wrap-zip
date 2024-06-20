@@ -1,0 +1,31 @@
+.info-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.info-card h5 {
+    margin: 10px 0;
+}
+
+.info-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card-info-label {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info-card:hover .info-card-info {
+    color: var(--accent);
+    transition: 0.5s;
+}
+
+.info-card:hover .info-card-image {
+    border: 0.0625rem solid black;
+    transition: 0.5s;
+}
