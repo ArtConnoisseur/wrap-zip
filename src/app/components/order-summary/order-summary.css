@@ -1,0 +1,31 @@
+.order-summary-container {
+    background-color: var(--gray-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-summary-header {
+    border-bottom: 0.5px solid var(--dark-gray-bg);
+}
+
+.order-summary-data {
+    display: flex;
+}
+
+.order-summary-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-summary-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-label {
+    border-top: 0.5px solid var(--dark-gray-bg);
+    font-size: 2rem;
+    font-family: 'Roboto Bold';
+}

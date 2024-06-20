@@ -1,8 +1,10 @@
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-evenly;
     padding: 10% 5%;
     align-items: center;
+    background-color: var(--dark-gray-bg);
+    color: #fff;
 }
 
 .footer-wrapzip-info {
@@ -19,13 +21,16 @@
     font-size: 1.3rem;
 }
 
+.footer-socmed-icons *:hover {
+    color: var(--accent);
+}
+
 .footer-link-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     font-size: 1.2rem;
-
 }
 
 
@@ -35,4 +40,12 @@
     flex-direction: column;
     gap: 10px;
     padding-left: 0;
+}
+
+.footer-links li {
+    color: #fff;
+}
+
+.footer-links li:hover {
+    color: var(--accent)
 }

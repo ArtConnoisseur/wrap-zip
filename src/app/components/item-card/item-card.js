@@ -40,11 +40,10 @@ export function CartInfoItem({ itemName='Item Name', category='category', price=
                 />
             </div>
             <div className='cart-item-info'>
-                <div>
-                    <h4 className='roboto cart-item-header'>{itemName}</h4>
+                <div className='card-item-labels'>
+                    <h4 className='cart-item-header'>{itemName}</h4>
                     <span className='cart-category-label'>{category}</span>
                 </div>
-               
                 <div className='cart-item-quantity'>
                     <label for='qty-dpd'>Quantity: </label>
                     <select className='quantity-dropdown' name='qty-dpd'>
