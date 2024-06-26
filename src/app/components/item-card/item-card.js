@@ -3,9 +3,6 @@
 import './item-card.css'; 
 
 import SampleImage from '../../../../public/sample-images/img/19.png'
-import ImageOne from '../../../../public/sample-images/index.js';
-
-import { useState } from 'react';
 import Image from 'next/image'; 
 
 // This value will come from the data in the backend/stored 
@@ -28,9 +25,6 @@ const quantities = [
 ];
 
 export function CartInfoItem({ itemName='Item Name', category='category', price='298.00', quantity=2 }) {
-    const [ image, setImage ] = useState(0); 
-
-
     return (
         <div className='item-card-container'>
             <div className='cart-image'>
@@ -57,7 +51,7 @@ export function CartInfoItem({ itemName='Item Name', category='category', price=
                 </span>
                 
                 <button className='small-button remove-cart-button'>
-                    Remove From Cart
+                    Remove Item
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>

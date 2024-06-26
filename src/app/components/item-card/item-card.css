@@ -55,12 +55,12 @@
 }
 
 .cart-item-quantity {
-    border: 0.5px solid var(--dark-gray-bg);
     padding: 5px;
     border-radius: 10px;
     transition: border 0.2s ease-in-out;
     background-color: var(--dark-gray-bg);
     color: #fff;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .quantity-dropdown {
@@ -85,8 +85,12 @@
     align-items: flex-end;
 }
 
-.item-card-container:hover, .cart-item-quantity:hover {
+.item-card-container:hover {
     border: 1px solid var(--accent);
+}
+
+.cart-item-quantity:hover {
+    background-color: var(--accent);
 }
 
 .item-card-container:hover .cart-image img {

@@ -1,5 +1,9 @@
 'use client'; 
 
+// add functionality to describe sizes 
+// add functionality to decribe different colours 
+
+
 import { useState } from 'react';
 
 import { Header } from '../components/header/header';

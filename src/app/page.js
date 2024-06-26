@@ -1,6 +1,6 @@
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import { MainImage } from './components/images/main-image/main-image';
+import Image from 'next/image';
 import { SectionDivider } from './components/section-divider/section-divider';
 import heroImage from '../../public/sample-images/img/19.png';
 
@@ -14,25 +14,18 @@ import { Newsletter } from './homepage-content/newsletter-cta/newsletter-cta';
 export default function Home() {
   return (
     <div id="homepage-container">
-      <div id="homepage-header">
-        <Header />
-        <div id="homepage-call-to-act">
-          <div id="homepage-head-content">
-            <h3 id="homepage-roboto-heading">
-              WrapZip Clothing Line
-            </h3>
-            <p id="homepage-large-font">
-              You can explore our high quality and<br/>fashionable clothing line!
-            </p>
-            <button className="big-button">
-              <i class="fa-solid fa-bag-shopping"></i>
-              Shop Now
-            </button>
-          </div>
-          <div id="homepage-image-content">
-            <MainImage src={ heroImage }/>
-          </div>
-        </div>
+      <Header />
+      <div id="homepage-head-content">
+          <h3>
+            Wrapzip Clothing Line
+          </h3>
+          <p id="homepage-large-font">
+            You can explore our high quality and<br/>fashionable clothing line!
+          </p>
+          <button className="big-button">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Shop Now
+          </button>
       </div>
       <SectionDivider />
       <ExploreGrid />

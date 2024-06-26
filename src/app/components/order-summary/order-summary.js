@@ -10,7 +10,7 @@ function LabelData({ label, data, isTotal }) {
     return (
         <div className={('order-summary-data ' + totalClass)}>
             <span>{label}:</span>
-            <span>{data}</span>
+            <span>₹ {data}</span>
         </div>
     );
 }

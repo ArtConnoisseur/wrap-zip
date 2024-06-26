@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 10px;
 }
 
 .order-summary-header {
     border-bottom: 0.5px solid var(--dark-gray-bg);
+    padding: 0 10%;
 }
 
 .order-summary-data {
@@ -22,10 +24,12 @@
 .order-summary-data {
     display: flex;
     justify-content: space-between;
+    padding: 0 5%;
+    font-family: 'Roboto Bold';
 }
 
 .total-label {
     border-top: 0.5px solid var(--dark-gray-bg);
     font-size: 2rem;
-    font-family: 'Roboto Bold';
+    padding: 10%;
 }

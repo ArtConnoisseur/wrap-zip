@@ -15,7 +15,7 @@ export function ExploreGrid() {
     return (
         <div className='explore-grid-container'>
             <div className='explore-grid-center'>
-                <span className='vertical-explore-text'>EXPLORE NEW AND POPULAR STYLES!</span>
+                <span className='vertical-explore-text'>EXPLORE NEW STYLES!</span>
                 <div className='explore-grid'>
                     <SiteImage src={imageOne} className='first-image img'/>
                     <SiteImage src={imageTwo} className='second-image img'/>
