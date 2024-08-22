@@ -1,4 +1,4 @@
-export default function SearchPage(props) {
+export default function SearchPage() {
     return (
         <div>
             Search
