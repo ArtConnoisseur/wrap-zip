@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "/public/logos/logo.svg";
 import { Navbarlink } from './Navbarlink';
-import { Icon } from "@/components/ui/icon";
+import { Icon } from "@/components/ui/Icon";
 import { Searchbar } from "@/components/ui/Search";
 import Link from "next/link";
 
