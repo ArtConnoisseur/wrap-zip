@@ -37,3 +37,46 @@
         transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
     }
 }
+
+.banner::before {
+    background-color: inherit;
+    content: '';
+    aspect-ratio: 1/1;
+    height: 100%;
+    position: absolute;
+    left:99%;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%);
+}
+
+#account-logo {
+    stroke: white;
+    animation: animate-logo 10s ease-in-out infinite alternate;
+}
+
+@keyframes animate-logo {
+    from {
+        stroke-dashoffset: 10px;
+        stroke-width: 0.5px;
+        stroke-dasharray: 5px 4px 1px 15px;
+    }
+    
+    to {
+        stroke-dashoffset: 0px;
+        stroke-width: 2px;
+        stroke-dasharray: 500px;
+    }
+}
+
+/*To remove the arrows from the number inputs globally*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

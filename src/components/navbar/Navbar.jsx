@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export function Navbar() {
     return (
-        <nav className="flex gap-10 items-center relative w-full h-fit py-5 drop-shadow-sm
-        px-[5%] bg-background shadow-md shadow-gray/30">
+        <nav className="flex gap-10 items-center sticky top-0 w-full h-fit py-5 drop-shadow-sm
+        px-[5%] bg-background shadow-md shadow-gray/30 z-20">
             <Link href='/' className='relative -top-1 scale-110'>
                 <Image
                     src={Logo}
@@ -32,7 +32,7 @@ export function Navbar() {
             {/*----------------Link Seperator---------------*/}
 
             <Searchbar className='ml-auto'/>
-            <Navbarlink to='/account'>
+            <Navbarlink to='/accounts'>
                 <div className='flex gap-2 flex-col items-center'>
                     <Icon name='UserPen'/>
                     <span className='text-sm'>Account</span>

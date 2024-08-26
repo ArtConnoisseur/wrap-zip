@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/Button';
 import { Selection } from "@/components/Selection";
 import { Ratings } from '@/components/Ratings';
 import { Input } from '@/components/ui/Input';
+import { Seperator } from "@/components/ui/Seperator";
 
 function ProductInfo({ header, info }) {
     return (
@@ -17,21 +18,25 @@ function ProductInfo({ header, info }) {
 export default function ProductPage() {
     const sizes = ["xs", "sm", "md", "lg"];
     return (
-        <div className='flex w-[80%] self-center gap-[100px]'>
+        <div className='flex w-[80%] self-center gap-[5%]'>
             <Lightbox images={Images}/>
             <div className='flex flex-col gap-4 w-[100%]'>
+                <h1 className='text-4xl m-none font-[600]'>Product Title goes here!</h1>
                 <div className='flex justify-between items-center'>
-                    <h1 className='text-4xl m-none font-[600]'>Product Title goes here!</h1>
+                    <span className='text-gray'>
+                        Category | Category | Category | Path
+                    </span>
                     <span className='flex gap-[1ch] border-accent border-[0.5px] px-3 py-2 rounded-sm'>
-                        <span className='flex gap-[1ch] items-center font-bold text-accent border-r-[0.5px] pr-[1ch] border-gray'><Icon
-                            name='Star'/>3.2</span> Total 136 ratings
+                        <span
+                            className='flex gap-[1ch] items-center font-bold text-accent border-r-[0.5px] pr-[1ch] border-gray'><Icon
+                            name='Star'/>
+                            3.2
+                        </span>
+                    Total 136 ratings
                     </span>
                 </div>
-                <span className='text-gray'>
-                    Category | Category | Category | Path
-                </span>
 
-                <hr className='w-full border-gray'/>
+                <Seperator/>
 
                 <div className='flex flex-col'>
                     <span className='text-green-600 text-sm italic'>*inclusive of all taxes</span>
@@ -54,7 +59,7 @@ export default function ProductPage() {
                     </Button>
                 </div>
 
-                <hr className='w-full border-gray'/>
+                <Seperator/>
 
                 Delivery option:
                 <div className='flex gap-6'>
@@ -65,7 +70,7 @@ export default function ProductPage() {
                 </div>
 
 
-                <hr className='w-full border-gray'/>
+                <Seperator/>
 
                 <h1 className='uppercase italic font-[400]'>Product Details</h1>
                 <ul>
@@ -74,12 +79,11 @@ export default function ProductPage() {
                     <li>This product is beautiful</li>
                 </ul>
 
-                <hr className='w-full border-gray'/>
+                <Seperator/>
 
-                <Ratings ratings={{5: 24, 4:10, 3:80, 2:12, 1:10}} />
+                <Ratings ratings={{5: 24, 4: 10, 3: 80, 2: 12, 1: 10}}/>
 
-                <hr className='w-full border-gray'/>
-
+                <Seperator/>
 
 
             </div>

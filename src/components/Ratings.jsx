@@ -40,7 +40,7 @@ export function Ratings({ ratings }) {
             <div className='flex flex-col gap-4 items-center w-fit h-full justify-center'>
                 <div className='flex gap-2 items-center'>
                     <span className='text-6xl'>{avg}</span>
-                    <Icon name='Star' fill className='text-2xl text-accent'/>
+                    <Icon name='Star' className='text-2xl text-accent fill-accent'/>
                 </div>
                 Reviewed by {total} users
             </div>

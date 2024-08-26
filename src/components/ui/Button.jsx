@@ -22,7 +22,7 @@ export function Button(props) {
             break
     }
     return (
-        <button className={`${styleType} ${props.className}`}>
+        <button className={`${styleType} ${props.className}`} onClick={props.onClick}>
             {props.children}
         </button>
     )

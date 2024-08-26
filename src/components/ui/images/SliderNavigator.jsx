@@ -3,7 +3,6 @@
 import {SliderNavImg} from "@/components/ui/images/SliderNavImg";
 
 export function SliderNavigator({images, current, setCurrent}) {
-    console.log(current*(360 / images.length));
     const angle = current*(360 / images.length);
 
     const styles = {
