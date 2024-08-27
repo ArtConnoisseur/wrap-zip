@@ -34,8 +34,8 @@ export function CartItem({ imgeSrc, title, price, discount=0, limited=true, quan
                 </div>}
             </div>
             <div className="ml-auto h-full flex flex-col text-sm gap-2">
-                {<span className='absolute right-4 top-4 w-fit h-fit px-4 py-1 -translate-y-20 opacity-0 group-hover:opacity-[1] group-hover:translate-y-0
-                transition-all duration:300 ease-linear rounded-full bg-primary text-white'>
+                {limited && <span className='absolute right-4 top-4 w-fit h-fit px-4 py-1 -translate-y-20 opacity-0 group-hover:opacity-[1] group-hover:translate-y-0
+                transition-all duration:300 ease-linear rounded-full bg-primary text-white invisible group-hover:visible'>
                     Limited stock!
                 </span>}
                 <Dropdown
@@ -59,12 +59,12 @@ export function CartItem({ imgeSrc, title, price, discount=0, limited=true, quan
                         Size: {cartState.size}
                     </Button>}
                 >
-                    {['sm', 'md', 'lg', 'xl'].map((num) => <Option
-                        key={num}
-                        selected={num === cartState.size}
-                        onClick={() => setCartState((state) => ({...state, quantity: num}))}
+                    {['sm', 'md', 'lg', 'xl'].map((size) => <Option
+                        key={size}
+                        selected={size === cartState.size}
+                        onClick={() => setCartState((state) => ({...state, size: size}))}
                     >
-                            {num}
+                            {size}
                         </Option>)}
                 </Dropdown>
                 <Button type='destructive' className='flex gap-2 items-center text-white'>
