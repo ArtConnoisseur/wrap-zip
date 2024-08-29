@@ -38,7 +38,7 @@ export function DevNav() {
     const [ visible, setVisible ] = useState(false);
 
     return (
-        <dialog className={`fixed h-[95vh] z-40 flex dev-nav my-[2.5vh] mx-7 rounded-lg ${visible && 'border-[2px] border-accent'}`}>
+        <dialog className={`fixed h-[95vh] z-40 flex dev-nav my-[2.5vh] mx-7 rounded-lg ${visible && 'border-[2px] border-accent'} overflow-auto`}>
             <Button type='outline' className={`${!visible && 'opacity-[0.2] scale-75'} absolute top-[150px] left-[105%] bg-white`} onClick={() => setVisible(!visible)}>
                 <Icon name='Menu'/>
             </Button>
