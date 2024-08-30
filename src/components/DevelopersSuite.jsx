@@ -38,11 +38,11 @@ export function DevNav() {
     const [ visible, setVisible ] = useState(false);
 
     return (
-        <dialog className={`fixed h-[95vh] z-40 flex dev-nav my-[2.5vh] mx-7 rounded-lg ${visible && 'border-[2px] border-accent'} overflow-auto`}>
+        <dialog className={`fixed h-[95vh] z-40 flex dev-nav my-[2.5vh] mx-7 rounded-lg ${visible && 'border-[2px] border-accent'}`}>
             <Button type='outline' className={`${!visible && 'opacity-[0.2] scale-75'} absolute top-[150px] left-[105%] bg-white`} onClick={() => setVisible(!visible)}>
                 <Icon name='Menu'/>
             </Button>
-            <div className={`top-0 ${visible && 'flex'} ${!visible && 'hidden'} flex-col gap-6 w-[25vw] px-5 bg-white py-10 rounded-lg`}>
+            <div className={`top-0 ${visible && 'flex'} ${!visible && 'hidden'} flex-col gap-6 w-[25vw] px-5 bg-white py-10 rounded-lg overflow-y-auto`}>
                 <h1 className="font-[600] text-accent text-center text-4xl">This is the admin Wrapzip navigator.</h1>
                 <p className="text-white bg-accent w-fit rounded-full px-4 self-center overflow-auto">Click the links to check each page</p>
                 <div className="flex flex-col gap-2">
