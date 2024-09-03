@@ -9,12 +9,12 @@
         --background-sc: 220 12% 95%;
         --secondary: 210 24% 16%;
         --on-secondary: 0 0% 100%;
-        --accent: 292 96% 80%;
+        --accent: 292 96% 70%;
         --primary: 5 100% 69%;
         --on-primary: 0 0% 100%;
         --gray: 210 10% 70%;
 
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -79,4 +79,5 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }

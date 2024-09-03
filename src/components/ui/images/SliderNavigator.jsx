@@ -14,7 +14,7 @@ export function SliderNavigator({images, current, setCurrent}) {
     };
 
     return (
-        <div className='slider transition-all duration-300 ease-in-out' style={styles}>
+        <div className='slider transition-all duration-300 ease-in-out relative' style={styles}>
             {images.map((imageSrc, index) => (
                 <SliderNavImg
                     src={imageSrc}

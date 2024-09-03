@@ -16,7 +16,7 @@ export function SliderNavImg({src, alt, imageNum, angle, active, setActive }) {
 
     return (
         <div
-            className={`nav-img ${active && 'text-center gap-2 scale-105 border-accent border-[1px] rounded-md p-1 box-border'}`}
+            className={`nav-img ${active && 'text-center gap-2 scale-105 border-accent border-[1px] rounded-md p-1 box-border'} shadow-xl`}
             style={styles} onClick={() => handleImageClick()}>
             <Image
                 src={src}
