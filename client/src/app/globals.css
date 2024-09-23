@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --text: 210 40% 4%;
+        --background: 0 0% 100%;
+        --background-sc: 220 12% 95%;
+        --secondary: 210 24% 16%;
+        --on-secondary: 0 0% 100%;
+        --accent: 292 96% 70%;
+        --primary: 5 100% 69%;
+        --on-primary: 0 0% 100%;
+        --gray: 210 10% 70%;
+
+        font-size: 16px;
+    }
+}
+
+.underline-animation {
+    @apply bg-gradient-to-b from-accent to-accent bg-[length:0_0.1em] bg-no-repeat bg-[0%_100%] hover:bg-[length:100%_0.1em]
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    text-orientation: mixed;
+}
+
+@keyframes autorun {
+    from {
+        transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(-20deg) rotateY(0deg);
+    }
+}
+
+.banner::before {
+    background-color: inherit;
+    content: '';
+    aspect-ratio: 1/1;
+    height: 100%;
+    position: absolute;
+    left:99%;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%);
+}
+
+#account-logo {
+    stroke: white;
+    animation: animate-logo 10s ease-in-out infinite alternate;
+}
+
+@keyframes animate-logo {
+    from {
+        stroke-dashoffset: 10px;
+        stroke-width: 0.5px;
+        stroke-dasharray: 5px 4px 1px 15px;
+    }
+    
+    to {
+        stroke-dashoffset: 0px;
+        stroke-width: 2px;
+        stroke-dasharray: 500px;
+    }
+}
+
+/*To remove the arrows from the number inputs globally*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
